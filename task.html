@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Display Page</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<style>
+		html,
+		body,
+		.container-fluid,
+		.row1 {
+			height: 98%;
+		}
+		.col-left{
+			height: 98%;
+		}
+		.block{
+			font-size:x-large
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row row1">
+			<div class="col block col-left">
+				<div style="margin-top: 50vh;">Current Number: <span id="current"></span></div>
+			</div>
+			<div class="col">
+				<div class="row1 row">
+					<div class="col-12 block">
+						<div style="margin-top: 20vh;">Next Number: <span id="next"></span></div>
+					</div>
+					<div class="col-12 block">
+						<div style="margin-top: 20vh;">Video/Image</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="mx-auto">NAME</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		var exampleSocket = new WebSocket("ws://192.168.1.116:8765")
+		exampleSocket.onmessage = function (event) {
+			//console.log(event.data);
+			document.getElementById("current").innerHTML = event.data;
+			document.getElementById("next").innerHTML = eval(event.data) + 1;
+		}
+		$(".block").addClass("border")
+	</script>
+</body>
+
+</HTML>
