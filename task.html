@@ -11,36 +11,58 @@
 		body,
 		.container-fluid,
 		.row1 {
-			height: 98%;
+			height: 96%;
 		}
 		.col-left{
-			height: 98%;
+			height: 96%;
 		}
-		.block{
-			font-size:x-large
+		.block {
+			font-size: x-large;
+			border: 1px solid black;
+		}
+		.rounded {
+			border-radius: 15px !important;
 		}
 	</style>
 </head>
 
 <body>
 	<div class="container-fluid">
+
 		<div class="row row1">
-			<div class="col block col-left">
-				<div style="margin-top: 50vh;">Current Number: <span id="current"></span></div>
-			</div>
-			<div class="col">
-				<div class="row1 row">
-					<div class="col-12 block">
-						<div style="margin-top: 20vh;">Next Number: <span id="next"></span></div>
+			
+				<div class="col p-3">
+					<div class="col block col-left rounded">
+						<div class="row row1">
+						<div class="col-3 text-center text-wrap" style="margin-top: 20vh;width: 6rem;">Current Number: <span id="current"></span></div>
+						<div class="col-8 block my-4"><span>abc</span></div>
+						</div>
 					</div>
-					<div class="col-12 block">
-						<div style="margin-top: 20vh;">Video/Image</div>
+				</div>
+			
+
+			<div class="col p-3">
+				<div class="row1 row px-3">
+
+						<div class="col-12 block mb-2 rounded">
+							<div class="my-2 border-top-0 border-bottom-0 rounded" style="border: 1px solid grey;height: 84%;">
+								<div class="text-center">Next Number: <span id="next"></span></div>
+							</div>
+						</div>
+
+						<div class="col-12 block rounded bg-dark">
+							<div class="text-center" style="margin-top: 20vh;">Video/Image</div>
+
 					</div>
 				</div>
 			</div>
+			
 		</div>
-		<div class="row">
-			<div class="mx-auto">NAME</div>
+		
+		<div class="row mx-auto rounded block" style="height: 15%;">
+			<div class="mx-auto my-2 border-top-0 border-bottom-0 rounded" style="border: 1px solid grey;height: 84%;">
+			<div class="mx-auto my-auto text-center" style="font-size: 16px;">NAME</div>
+			</div>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -52,7 +74,6 @@
 			document.getElementById("current").innerHTML = event.data;
 			document.getElementById("next").innerHTML = eval(event.data) + 1;
 		}
-		$(".block").addClass("border")
 	</script>
 </body>
 
