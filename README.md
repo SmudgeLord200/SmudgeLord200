@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @SmudgeLord200
-- 👀 I’m interested in PHP, MYSQL, HTML, CSS, JavaScript, jQuery, C++, Java
-- 🌱 I’m currently learning PHP, MYSQL, HTML, CSS, JavaScript, jQuery, C++, Java
+- 👀 I’m interested in HTML, CSS, JavaScript
+- 🌱 I’m currently learning HTML, CSS, JavaScript
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
