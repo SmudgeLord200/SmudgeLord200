@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @SmudgeLord200
 - 👀 I’m interested in HTML, CSS, JavaScript
-- 🌱 I’m currently learning HTML, CSS, JavaScript
+- 🌱 I’m currently learning HTML, CSS, JavaScript, React, Redux
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
