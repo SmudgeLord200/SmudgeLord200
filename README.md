@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Nicole<br/>
 - 👀 I’m a frontend developer<br/>
-- 🌱 My skill set includes JavaScript, TypeScript, React, Redux, Material UI, Chakra UI, etc...
+- 🌱 My skill set includes JavaScript, TypeScript, React, Redux, Material UI, etc...
 - 💞️ I’m looking for frontend developer roles in the UK
 - 📫 How to reach me by email or LinkedIn
 
